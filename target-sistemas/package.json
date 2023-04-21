@@ -1,0 +1,13 @@
+{
+  "name": "target-sistemas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "questao5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node questao5.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
