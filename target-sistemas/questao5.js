@@ -1,5 +1,8 @@
 const readLine = require('readline')
 
+const stringsReversed = []
+
+
 const rl = readLine.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -8,8 +11,14 @@ const rl = readLine.createInterface({
 rl.question('Type a string: ', (answer) => {
     const string = answer;
     const stringArray = string.split('');
-    const stringArrayReversed = stringArray.reverse();
-    const stringReversed = stringArrayReversed.join('');
-    console.log(stringReversed);
-    rl.close();
+
+for (let i = stringArray.length - 1; i >=0; i--) {
+    stringsReversed.push(stringArray[i])
+}
+
+const stringReversed = stringsReversed.join('')
+
+console.log(stringReversed);
+rl.close();
+
 })
